@@ -2,15 +2,23 @@
 # uncomment the urls if you wish to display them, and add your own URL
 
 # jazznotes.io
-- project: jazznotes.io
-  role: Founder & Primary Developer
-  duration: 2012 &mdash; Present
-  # url: "#"
-  description: Jazz Notes is an open source node/ember app that helps you keep track of your music compositions and new ideas.
+
 
 # Springfield Community Outreach Group
-- project: Springfield Community Outreach Group
-  role: Co-Founder & Organizer
-  duration: 2007 &mdash; Present
-  # url: "#"
-  description: SCOG is a local monthly meetup in Springfield where we share opportunities to volunteer in the community and organize support for families and neighborhoods in need of assistance that the community can provide.
+- project: Research Project
+  role: Student
+  duration: 2025
+  url: "https://www.researchgate.net/publication/396985385_Solving_Systems_of_Fractional_Differential_Equations_by_Using_Physics_Informed_Deep_Learning_methods_and_Application_to_a_Fractional_Order_Bergman's_Minimal_Type_Model_of_Insulin_Injection"
+  description: I participated in the MCO2025 conference and published in the proceedings Solving systems of fractional differential equations by using physics informed deep learning methods and application to a fractional order Bergman’s minimal type model of insulin injection
+
+- project: Research Project
+  role: Student
+  duration: 2024
+  #url: "#"
+  description: I worked on finding stables initial conditions of the three body problem using optimal control and robust optimization.
+
+- project: Research Project
+  role: Student
+  duration: 2020 &mdash; now
+  url: "https://github.com/LeProblemeEDMN/Projets/tree/main/ChacalEngine%20v2.0"
+  description: I devellop a 3D rendering engine in Java using OpenGL.

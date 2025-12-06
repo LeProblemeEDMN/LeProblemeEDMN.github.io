@@ -1,5 +1,5 @@
 # Site settings
-title: "Jekyll Resume Template"
+title: "Baptiste Guilbery"
 description: "A resume template for Jekyll and GitHub Pages sites."
 
 # Build settings
@@ -37,15 +37,15 @@ resume_section_experience:      true
 resume_section_education:       true
 resume_section_projects:        true
 resume_section_skills:          true
-resume_section_recognition:     true
-resume_section_links:           true
+# resume_section_recognition:     true
+#resume_section_links:           true
 resume_section_associations:    true
 # resume_section_interests:       true
 
 # Resume social links
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
-  resume_github_url:            "https://https://github.com/LeProblemeEDMN/Projets"
+  resume_github_url:            "https://github.com/LeProblemeEDMN/Projets/tree/main"
 resume_print_social_links:      true
 
 # Design settings
