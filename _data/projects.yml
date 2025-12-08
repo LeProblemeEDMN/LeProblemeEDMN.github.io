@@ -9,7 +9,7 @@
   role: Student
   duration: 2025
   url: "https://www.researchgate.net/publication/396985385_Solving_Systems_of_Fractional_Differential_Equations_by_Using_Physics_Informed_Deep_Learning_methods_and_Application_to_a_Fractional_Order_Bergman's_Minimal_Type_Model_of_Insulin_Injection"
-  description: I participated in the MCO2025 conference and published in the proceedings Solving systems of fractional differential equations by using physics informed deep learning methods and application to a fractional order Bergman’s minimal type model of insulin injection
+  description: I participated in the MCO2025 conference and published in the proceedings an article called Solving systems of fractional differential equations by using physics informed deep learning methods and application to a fractional order Bergman’s minimal type model of insulin injection
 
 - project: Research Project
   role: Student
@@ -18,7 +18,7 @@
   description: I worked on finding stables initial conditions of the three body problem using optimal control and robust optimization.
 
 - project: Research Project
-  role: Student
+  role: 
   duration: 2020 &mdash; now
   url: "https://github.com/LeProblemeEDMN/Projets/tree/main/ChacalEngine%20v2.0"
-  description: I devellop a 3D rendering engine in Java using OpenGL.
+  description: I am developing a 3D rendering engine in Java using OpenGL.

@@ -1,19 +1,19 @@
 # Jobs
 # VP of Global Communications
-- company: Script&Go
+- company: IFP Energies Nouvelles
   position: Intern
   duration: Feb, 2025 &mdash; Jul, 2025
-  summary: I worked in improving the parallel performance of the reactive transport solver of Geoxim a numerical simulation code for underground fluids physics. I both worked on code performance and mathematical definition to reduce the computation time.
+  summary: I worked in improving the parallel performance of the reactive transport solver of a numerical simulation code for underground fluids physics. I both worked on code performance and mathematical definition to reduce the computation time.
 
 # Director of Digital Stratgy
-- company: United Nations Human Rights Council
+- company: Script&Go
   position: Intern
   duration:  May, 2024 &mdash; Aug, 2024
-  summary: Developpement an image classification model for building defaults. I made used of several data sources such as images or metadata of the images to improve the results.
+  summary: Developement an image classification model for building defaults. I made used of several data sources such as images or metadata of the images to improve the results.
 
 
 # Communications Coordinator
 - company: IRMAR
   position: Intern
   duration:  Jun, 2023  &mdash; Jul, 2023
-  summary: Research internship. Devellopement and both theoritical and numerical study of a non-differentiable convex optimization algorithm. 
+  summary: Research internship. Developement and both theoritical and numerical study of a non-differentiable convex optimization algorithm. 
