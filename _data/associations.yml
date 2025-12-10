@@ -5,7 +5,7 @@
   role: Treasurer
   year: 2022 &mdash; 2024
   url: https://www.inria.fr/fr
-  image: /_assets/inria.svg
+  image: images/inria.svg
   summary: Inria is France’s national research institute for digital science and technology. It conducts leading research in computer science, mathematics, AI, robotics, networks, and cybersecurity, and works closely with industry through open-source software and startup creation.
 
 
@@ -14,5 +14,5 @@
   role: Member
   year: 2022 &mdash; 2025
   url: https://www.ifpenergiesnouvelles.fr/
-  image: /_assets/logo_ifp.webp
+  image: images/logo_ifp.webp
   summary: IFPEN is a French public research and training institute working in the field of energy, transport and environment. Its mission is to develop technological innovations from fundamental research to industrial applications — that support the energy transition, sustainable mobility, and a diversified, low-carbon energy mix. Through research, innovation, industrial partnerships and training (via its associated graduate school), IFPEN aims to create solutions that respond to climate and environmental challenges while fostering economic growth and competitiveness in energy-related sectors.

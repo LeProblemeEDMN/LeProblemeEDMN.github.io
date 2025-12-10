@@ -192,16 +192,27 @@
 
         {% for association in site.data.associations %}
         <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name" style="display:flex; align-items:center; gap:8px;">
-          {% if association.image %}
-            <img src="{{ association.image }}" alt="{{ association.organization }} logo" style="width:24px; height:auto;">
-          {% endif %}
-          {% if association.url %}
-            <a href="{{ association.url }}">{{ association.organization }}</a>
-          {% else %}
-            {{ association.organization }}
-          {% endif %}
-        </h3>
+          <h3 class="resume-item-title" style="display:flex; align-items:center; gap:10px;">
+
+            {% if association.url %}
+            <a href="{{ association.url }}" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+              {% if association.image %}
+                <img src="{{ association.image }}" 
+                    alt="{{ association.organization }} logo" 
+                    style="width:28px; height:auto; display:block;">
+              {% endif %}
+              <span itemprop="name">{{ association.organization }}</span>
+            </a>
+            {% else %}
+              {% if association.image %}
+              <img src="{{ association.image }}" 
+                  alt="{{ association.organization }} logo" 
+                  style="width:28px; height:auto; display:block;">
+              {% endif %}
+              <span itemprop="name">{{ association.organization }}</span>
+            {% endif %}
+
+          </h3>
           <!--<h4 class="resume-item-details" itemprop="description">{{ association.role }} &bull; {{ association.year }}</h4>-->
           <p class="resume-item-copy">{{ association.summary }}</p>
         </div>
