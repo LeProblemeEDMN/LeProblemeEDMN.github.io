@@ -1,5 +1,9 @@
 # links
-- url: "#"
-  description: Springfield Jazz Enthusiasts
-- url: "#"
-  description: Springfield Young Professionals
+- url: https://team.inria.fr/matherials/team-members/sebastien-boyaval/
+  name: Sebastien Boyaval
+  title: Thesis Supervisor
+  affiliation: LHSV, ENPC, IP Paris
+- url: '#'
+  name: Guillaume Enchery
+  title: Supervisor
+  affiliation: IFPEN
