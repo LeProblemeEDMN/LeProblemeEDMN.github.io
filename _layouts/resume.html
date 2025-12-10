@@ -48,6 +48,33 @@
 
       </header>
 
+      {% if site.resume_section_links %}
+      <!-- begin Links -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Supervising Team</h2>
+        </header>
+
+        <div class="resume-item">
+          <ul class="resume-item-list">
+            {% for link in site.data.links %}
+            <li>
+              <a href="{{ link.url }}" itemprop="url">
+                <strong>{{ link.name }}</strong><br>
+                {% if link.title %}<span class="link-title">{{ link.title }}</span><br>{% endif %}
+                {% if link.affiliation %}<span class="link-affiliation">{{ link.affiliation }}</span>{% endif %}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+      </section>
+      <!-- end Links -->
+      {% endif %}
+
+
       {% if site.resume_section_experience %}
       <!-- begin Experience -->
       <section class="content-section">
@@ -165,7 +192,16 @@
 
         {% for association in site.data.associations %}
         <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">{% if association.url %}<a href="{{ association.url }}">{{ association.organization }}</a>{% else %}{{ association.organization }}{% endif %}</h3>
+          <h3 class="resume-item-title" itemprop="name" style="display:flex; align-items:center; gap:8px;">
+          {% if association.image %}
+            <img src="{{ association.image }}" alt="{{ association.organization }} logo" style="width:24px; height:auto;">
+          {% endif %}
+          {% if association.url %}
+            <a href="{{ association.url }}">{{ association.organization }}</a>
+          {% else %}
+            {{ association.organization }}
+          {% endif %}
+        </h3>
           <!--<h4 class="resume-item-details" itemprop="description">{{ association.role }} &bull; {{ association.year }}</h4>-->
           <p class="resume-item-copy">{{ association.summary }}</p>
         </div>
@@ -195,31 +231,7 @@
       <!-- end Interests -->
       {% endif %}
 
-      {% if site.resume_section_links %}
-      <!-- begin Links -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Additional Links</h2>
-        </header>
-
-        <div class="resume-item">
-          <ul class="resume-item-list">
-            {% for link in site.data.links %}
-            <li>
-              <a href="{{ link.url }}" itemprop="url">
-                <strong>{{ link.name }}</strong><br>
-                {% if link.title %}<span class="link-title">{{ link.title }}</span><br>{% endif %}
-                {% if link.affiliation %}<span class="link-affiliation">{{ link.affiliation }}</span>{% endif %}
-              </a>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-
-      </section>
-      <!-- end Links -->
-      {% endif %}
+      
 
       {% if site.resume_print_social_links %}
       <!-- begin Print Social Links -->
