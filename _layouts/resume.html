@@ -89,20 +89,22 @@
 
             {% if association.url %}
             <a href="{{ association.url }}" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+              
+              <span itemprop="name">{{ association.organization }}</span>
               {% if association.image %}
                 <img src="{{ association.image }}" 
                     alt="{{ association.organization }} logo" 
-                    style="width:56px; height:auto; display:block;">
+                    style="width:84px; height:auto; display:block;">
               {% endif %}
-              <span itemprop="name">{{ association.organization }}</span>
             </a>
             {% else %}
+              
+              <span itemprop="name">{{ association.organization }}</span>
               {% if association.image %}
               <img src="{{ association.image }}" 
                   alt="{{ association.organization }} logo" 
-                  style="width:56px; height:auto; display:block;">
+                  style="width:84px; height:auto; display:block;">
               {% endif %}
-              <span itemprop="name">{{ association.organization }}</span>
             {% endif %}
 
           </h3>
