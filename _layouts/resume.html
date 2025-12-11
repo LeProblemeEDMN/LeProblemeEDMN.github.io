@@ -75,6 +75,42 @@
       {% endif %}
 
 
+      {% if site.resume_section_associations %}
+      <!-- begin Associations -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Affiliation</h2>
+        </header>
+
+        {% for association in site.data.associations %}
+        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" style="display:flex; align-items:center; gap:10px;">
+
+            {% if association.url %}
+            <a href="{{ association.url }}" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+              {% if association.image %}
+                <img src="{{ association.image }}" 
+                    alt="{{ association.organization }} logo" 
+                    style="width:56px; height:auto; display:block;">
+              {% endif %}
+              <span itemprop="name">{{ association.organization }}</span>
+            </a>
+            {% else %}
+              {% if association.image %}
+              <img src="{{ association.image }}" 
+                  alt="{{ association.organization }} logo" 
+                  style="width:56px; height:auto; display:block;">
+              {% endif %}
+              <span itemprop="name">{{ association.organization }}</span>
+            {% endif %}
+
+          </h3>
+          <!--<h4 class="resume-item-details" itemprop="description">{{ association.role }} &bull; {{ association.year }}</h4>-->
+          <p class="resume-item-copy">{{ association.summary }}</p>
+        </div>
+        {% endfor %}
+
       {% if site.resume_section_experience %}
       <!-- begin Experience -->
       <section class="content-section">
@@ -182,41 +218,7 @@
       <!-- end Recognition -->
       {% endif %}
 
-      {% if site.resume_section_associations %}
-      <!-- begin Associations -->
-      <section class="content-section">
 
-        <header class="section-header">
-          <h2>Founding</h2>
-        </header>
-
-        {% for association in site.data.associations %}
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" style="display:flex; align-items:center; gap:10px;">
-
-            {% if association.url %}
-            <a href="{{ association.url }}" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
-              {% if association.image %}
-                <img src="{{ association.image }}" 
-                    alt="{{ association.organization }} logo" 
-                    style="width:28px; height:auto; display:block;">
-              {% endif %}
-              <span itemprop="name">{{ association.organization }}</span>
-            </a>
-            {% else %}
-              {% if association.image %}
-              <img src="{{ association.image }}" 
-                  alt="{{ association.organization }} logo" 
-                  style="width:28px; height:auto; display:block;">
-              {% endif %}
-              <span itemprop="name">{{ association.organization }}</span>
-            {% endif %}
-
-          </h3>
-          <!--<h4 class="resume-item-details" itemprop="description">{{ association.role }} &bull; {{ association.year }}</h4>-->
-          <p class="resume-item-copy">{{ association.summary }}</p>
-        </div>
-        {% endfor %}
 
       </section>
       <!-- end Associations -->
