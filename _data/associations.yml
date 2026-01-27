@@ -17,6 +17,13 @@
   image: images/logo_ifp.webp
   summary: IFPEN is a French public research and training institute working in the field of energy, transport and environment. Its mission is to develop technological innovations from fundamental research to industrial applications — that support the energy transition, sustainable mobility, and a diversified, low-carbon energy mix. Through research, innovation, industrial partnerships and training (via its associated graduate school), IFPEN aims to create solutions that respond to climate and environmental challenges while fostering economic growth and competitiveness in energy-related sectors.
 
+- organization: Matherials
+
+  role: Member
+  year: 2022 &mdash; 2025
+  url: https://team.inria.fr/matherials/
+  summary: MATHERIALS is a research team of Inria and Ecole des Ponts ParisTech. The MATHERIALS team develops high-performance, rigorous numerical methods to simulate materials across all scales, from quantum chemistry to continuum mechanics. Their research focuses on the theoretical analysis of simulation techniques, with a specific emphasis on modeling realistic, non-ideal systems such as materials with defects or out-of-equilibrium dynamics.
+
 - organization: Lab-comm
 
   role: Member
